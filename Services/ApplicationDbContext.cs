@@ -14,6 +14,7 @@ using ProjectLexicon.Models.Tags;
 using ProjectLexicon.Models.ForumPosts;
 using ProjectLexicon.Models.ForumThreads;
 using ProjectLexicon.Models.Shared;
+using ProjectLexicon.Models.Events;
 
 namespace ProjectLexicon.Services
 {
@@ -24,6 +25,7 @@ namespace ProjectLexicon.Services
         public DbSet<Tag> Tags { get; set; } = null!;
         public DbSet<ForumPost> ForumPosts { get; set; } = null!;
         public DbSet<ForumThread> ForumThreads { get; set; } = null!;
+        public DbSet<Event> Events { get; set; }
 
         public ApplicationDbContext(
 			DbContextOptions options,
